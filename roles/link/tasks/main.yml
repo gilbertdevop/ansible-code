@@ -1,0 +1,6 @@
+---
+- name: Downloads package from url
+  win_get_url:
+    dest: "{{dest_path}}" 
+    url: "{{my_url}}"
+    

@@ -1,0 +1,13 @@
+---
+- hosts: wind
+  tasks:
+    - name: create a file
+      win_file
+        path: C:\Users\Adminstrator\Destop\Gilbert
+        state: directory
+    - name: downloads file online
+      win_get_url:
+         dest: C:\Users\Adminstrator\Destop\Gilbert
+         url: https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.3.tar.xz
+         
+
